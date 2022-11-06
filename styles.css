@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --fontOne:'Rubik', sans-serif;
+
+    --blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --selfCare: hsl(43, 84%, 65%);
+
+    --veryDarkBlue: hsl(226, 43%, 10%);
+    --darkBlue: hsl(235, 46%, 20%);
+    --desaturatedBlue: hsl(235, 45%, 61%);
+    --paleBlue: hsl(236, 100%, 87%);
+
+    --purple:hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: var(--fontOne);
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+main {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 200px;
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userContainer {
+    width: 100%;
+    height: 125px;
+    background-color: var(--blue);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.userPicture {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: inline-block;
+    background-image: url("./images/image-jeremy.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 15px;
+
+}
+
+.userData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.reportText {
+    font-size: 1.5rem;
+    color: var(--desaturatedBlue);
+}
+
+.userName {
+    font-size: 2.5rem;
+    color: var(--paleBlue);
+}
+
+.timeOptionsContainer {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.timeOptionsContainer button {
+    
+    font-family: var(--fontOne);
+    background-color: var(--darkBlue);
+    border: none;
+    font-size: 1.8rem;
+    color: var(--desaturatedBlue);
+}
+
+.timeOptionsContainer button:hover {
+    cursor: pointer;
+    color: var(--paleBlue);
+}
+
+
+.activityMainContainer {
+
+    width: 100%;
+    height: 175px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-position: 95% -10%;
+
+}
+
+#work {
+    background-color: var(--work);
+    background-image: url(./images/icon-work.svg); 
+}
+
+#play {
+    background-color: var(--play);
+    background-image: url(./images/icon-play.svg); 
+}
+
+#study {
+    background-color: var(--study);
+    background-image: url(./images/icon-study.svg); 
+}
+
+#exercise {
+    background-color: var(--exercise);
+    background-image: url(./images/icon-exercise.svg); 
+}
+
+#social {
+    background-color: var(--social);
+    background-image: url(./images/icon-social.svg); 
+}
+
+#selfcare {
+    background-color: var(--selfCare);
+    background-image: url(./images/icon-self-care.svg); 
+}
+
+.activityDataContainer {
+    width: 100%;
+    height: 125px;
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activityDataContainer:hover {
+    cursor: pointer;
+    background-color: hsl(236, 41%, 32%);
+}
+
+.activityDataBlockOne {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activityDataBlockTwo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activityName {
+    color: var(--paleBlue);
+    font-size: 1.8rem;
+}
+
+.menuIcon {
+    display: inline-block;
+    width: 21px;
+    height: 5px;
+    background-image: url(./images/icon-ellipsis.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menuIcon:hover {
+    background-image: url(./images/icon-ellipsis\ copy.svg);
+}
+
+.time {
+    color: var(--paleBlue);
+    font-size: 2.5rem;
+}
+
+.last {
+    color: var(--desaturatedBlue);
+    font-size: 1.5rem;
+}
+
+
+.attribution {
+    font-size: 1.1rem;
+    color: var(--paleBlue);
+    margin-bottom: 4px;
+    margin-top: 46px;
+    
+}
+.attribution a {
+    color: var(--purple);
+}
