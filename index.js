@@ -77,7 +77,7 @@ fetch("./data.json")
 
                 if (option=="daily") {
                     timeList[count].innerText=activity.timeframes.daily.current+"hrs";
-                    lastList[count].innerText="Last Day - "+activity.timeframes.daily.previous+"hrs";
+                    lastList[count].innerText="Yesterday - "+activity.timeframes.daily.previous+"hrs";
                     dailyButton.setAttribute("style","color:hsl(236, 100%, 87%)");
                     weeklyButton.removeAttribute("style");
                     monthlyButton.removeAttribute("style");
